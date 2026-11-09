@@ -1,0 +1,159 @@
+.upperBox {
+  width: 350px;
+  min-height: 554px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+
+  padding: 19px 41px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .errorMessage {
+      width: 268px;
+
+      margin: 2px 0 0;
+
+      font-size: 12px;
+      line-height: 16px;
+
+      color: #ff0014;
+
+      text-align: left;
+    }
+
+    .serverErrorMessage {
+      width: 268px;
+
+      margin: 2px 0 0;
+
+      font-size: 12px;
+      line-height: 16px;
+
+      color: #ff0014;
+
+      text-align: left;
+    }
+
+    img {
+      width: 190px;
+      height: 107px;
+    }
+
+    .signUpToSee {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+
+      color: #737373;
+
+      text-align: center;
+
+      margin-bottom: 36px;
+    }
+
+    .inputBox {
+      width: 268px;
+      margin-bottom: 6px;
+
+      input {
+        display: block;
+
+        width: 268px;
+        height: 38px;
+
+        border: 1px solid #dbdbdb;
+        border-radius: 6px;
+
+        background-color: #fafafa;
+
+        padding: 11px 0 11px 8px;
+
+        &::placeholder {
+          color: #737373;
+          font-size: 12px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    .textBox {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      margin-top: 20px;
+
+      .text {
+        font-size: 11.8px;
+        line-height: 16px;
+
+        color: #737373;
+
+        text-align: center;
+
+        span {
+          font-size: 12px;
+          line-height: 16px;
+
+          color: #00376b;
+        }
+      }
+    }
+
+    .signUpButton {
+      width: 268px;
+      min-height: 32px;
+
+      border: none;
+      border-radius: 8px;
+
+      background-color: #0095f6;
+      color: white;
+
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+
+      margin: 8px 0 22px 0;
+    }
+  }
+}
+
+.lowerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  width: 350px;
+  height: 63px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .logInButton {
+    border: none;
+    background-color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    color: #0095f6;
+  }
+}

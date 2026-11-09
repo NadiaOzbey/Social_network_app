@@ -1,0 +1,88 @@
+.container {
+  border: none;
+  background: white;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f8f8f8;
+  }
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 18px;
+  object-fit: cover;
+}
+
+.content {
+  width: 170px;
+  text-align: left;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #000;
+}
+
+.action {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.timestamp {
+  font-size: 14px;
+  line-height: 18px;
+  color: #737373;
+}
+
+.postImageWrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-left: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.postImage {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.read .username {
+  color: #b3b3b3;
+}
+// .read .username::after {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(255, 255, 255, 0.45);
+// }
+
+.read .action {
+  color: #b3b3b3;
+}
+
+.read .timestamp {
+  color: #b3b3b3;
+}
+
+.read .postImageWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.read .avatar {
+  opacity: 0.6;
+}

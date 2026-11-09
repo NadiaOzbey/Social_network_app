@@ -1,0 +1,67 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16.5px;
+
+  width: 397px;
+  height: 100%;
+
+  padding: 24px;
+
+  background: #fff;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+
+  h1 {
+    flex-shrink: 0;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  h3 {
+    flex-shrink: 0;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.loaderWrap {
+  flex: 1;
+
+  display: grid;
+  place-items: center;
+
+  min-height: 0;
+  width: 100%;
+}
+
+.loader {
+  width: 28px;
+  height: 28px;
+
+  border: 3px solid #d8d8d8;
+  border-top-color: #0f4cba;
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

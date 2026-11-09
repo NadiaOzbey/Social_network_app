@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  gap: 8px;
+
+  .editProfileButton {
+    width: 169px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background: #efefef;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    font-family: inherit;
+  }
+  .followButton {
+    width: 132px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background: #0095F6;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    font-family: inherit;
+  }
+  .messageButton {
+    width: 190.5px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background: #efefef;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    font-family: inherit;
+  }
+
+}

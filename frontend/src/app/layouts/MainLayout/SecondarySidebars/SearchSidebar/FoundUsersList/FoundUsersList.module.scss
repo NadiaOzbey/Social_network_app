@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  a {
+    text-decoration: none;
+    .userLine {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+      }
+      .nameInfo {
+        display: flex;
+        gap: 10px;
+        p {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px;
+          color: black;
+        }
+      }
+    }
+  }
+}

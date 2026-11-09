@@ -1,0 +1,50 @@
+.post {
+  position: relative;
+
+  width: 307.7px;
+  height: 307.7px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    inset: 50% 0 0;
+
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.65)
+    );
+
+    pointer-events: none;
+  }
+
+  .description {
+    position: relative;
+    z-index: 1;
+
+    margin-top: auto;
+    padding: 20px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+}

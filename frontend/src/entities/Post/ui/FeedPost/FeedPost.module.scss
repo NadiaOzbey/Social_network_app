@@ -1,0 +1,223 @@
+.container {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 37px;
+
+  .heading {
+    display: flex;
+    margin-bottom: 12px;
+
+    .avatarLink {
+      display: block;
+      flex-shrink: 0;
+
+      width: 36px;
+      height: 36px;
+
+      margin-right: 9px;
+
+      text-decoration: none;
+    }
+
+    .avatar {
+      position: relative;
+
+      width: 36px;
+      height: 36px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .avatarImage {
+        position: relative;
+        z-index: 2;
+
+        width: 27px;
+        height: 27px;
+
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .avatarBorder {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 36px;
+        height: 36px;
+
+        pointer-events: none;
+
+        z-index: 3;
+      }
+    }
+
+    .headingText {
+      display: flex;
+      align-items: center;
+
+      margin-top: 5px;
+
+      .usernameLink {
+        margin-right: 5px;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.5px;
+
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .timeStamp {
+        font-size: 12px;
+        line-height: 15.5px;
+
+        color: #737373;
+
+        margin-right: 10px;
+      }
+
+      button {
+        display: flex;
+        align-items: flex-start;
+
+        border: none;
+        background: white;
+
+        color: #0095f6;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.5px;
+      }
+    }
+  }
+
+  .postImageButton {
+    display: block;
+
+    width: 100%;
+
+    padding: 0;
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+  }
+
+  .postImage {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    margin-bottom: 12px;
+
+    object-fit: cover;
+  }
+
+  .bottom {
+    .iconStrip {
+      display: flex;
+      gap: 13.8px;
+
+      margin-bottom: 11px;
+
+      button {
+        width: 20.67px;
+        height: 20.67px;
+
+        border: none;
+        background: white;
+      }
+    }
+
+    .likes {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 15.5px;
+
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 12px;
+      line-height: 15.5px;
+
+      margin-bottom: 8px;
+
+      .descriptionContent {
+        font-size: 12px;
+        line-height: 15.5px;
+      }
+
+      .username {
+        display: inline;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.5px;
+
+        margin-right: 4px;
+      }
+
+      .descriptionText {
+        display: inline;
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.5px;
+
+        color: #000000;
+      }
+
+      .descriptionTextExpanded {
+        display: inline;
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.5px;
+
+        color: #000000;
+      }
+
+      .moreButton {
+        display: inline;
+
+        border: none;
+        padding: 0;
+        margin-left: 3px;
+
+        background: white;
+
+        cursor: pointer;
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.5px;
+
+        color: #737373;
+      }
+    }
+
+    .commentsButton {
+      border: none;
+      padding: 0;
+
+      background: white;
+
+      font-size: 12px;
+      line-height: 15.5px;
+
+      color: #737373;
+    }
+  }
+}

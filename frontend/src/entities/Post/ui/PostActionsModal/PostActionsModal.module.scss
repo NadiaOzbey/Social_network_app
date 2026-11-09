@@ -1,0 +1,155 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  padding: 20px;
+
+  overflow: auto;
+
+  .modal {
+    position: relative;
+
+    width: 400px;
+    height: 240px;
+
+    flex-shrink: 0;
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    .actionButton {
+      width: 100%;
+      height: 48px;
+
+      padding: 0;
+
+      border: none;
+      border-bottom: 1px solid #dbdbdb;
+
+      background: none;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+
+      color: #000;
+
+      cursor: pointer;
+
+      transition:
+        color 0.15s ease;
+
+      &:hover {
+        color: #ed4956;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .delete {
+      font-weight: 600;
+    }
+  }
+
+  .confirmModal {
+    width: 400px;
+    height: auto;
+  }
+
+  .confirmContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 32px 24px 24px;
+  }
+
+  .confirmText {
+    margin: 0 0 28px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    text-align: center;
+    color: #000;
+  }
+
+  .confirmButton {
+    width: 100%;
+    height: 44px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: none;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+
+    color: #000;
+
+    cursor: pointer;
+
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
+
+    &:hover {
+      color: #ed4956;
+      background: #f7f7f7;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+  }
+
+  .confirmDelete {
+    font-weight: 600;
+    color: #ed4956;
+
+    &:hover {
+      color: #ed4956;
+      background: #f7f7f7;
+    }
+  }
+
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 300px;
+
+    z-index: 1100;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    transform: translateX(-50%);
+  }
+}

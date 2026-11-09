@@ -1,0 +1,26 @@
+.mainPage {
+    padding: 58px 270px 74px 77px;
+    .posts {
+        margin-bottom: 38px;
+    }
+    .check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 82.7px;
+            height: 82.7px;
+            margin-bottom: 11px;
+        }
+        .bold {
+            font-size: 17px;
+            line-height: 21.5px;
+            margin-bottom: 4px;
+        }
+        .plain {
+            font-size: 12px;
+            line-height: 15.5px;
+            color: #737373;
+        }
+    }
+}

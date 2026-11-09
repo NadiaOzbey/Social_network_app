@@ -1,0 +1,23 @@
+.card {
+  display: block;
+
+  width: 317px;
+  height: 317px;
+
+  overflow: hidden;
+
+  text-decoration: none;
+
+  img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
